@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "Industristädning",
+    "text": "Industristädning sätter höga krav på kompetensen och vi lever alltid upp till den.",
+    "path":  "../img/pexels-becosan-3681787.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Fabriksstädning",
+    "text": "Fabriker är verksamma 24/7, vi sköter städningen oavsett tidpunkt och dag.",
+    "path": "../img/pexels-pixabay-209230.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Livsmedelsstädning",
+    "text": "Vi är industriledande inom livsmedelsstädning och har flera referenser inom det.",
+    "path": "../img/pexels-karolina-grabowska-4239035.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Kontorsstädning",
+    "text": "Löpande eller engångstillfälle? Vi levererar i hela Sverige.",
+    "path": "../img/kontorsstadning.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Butiksstädning",
+    "text": "Butiker och livsmedelsbutiker behöver ständig städning, vi fixar det åt dig.",
+    "path": "../img/pexels-matilda-wormwood-4098313.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Hemstäd",
+    "text": "Vem vill inte komma hem till ett rent hem? Vi ser till att du kan koppla av.",
+    "path": "../img/pexels-tima-miroshnichenko-6195288.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Sanering",
+    "text": "Sanering betyder kort och gott, rengöring. Något vi är absolut bäst på.",
+    "path": "../img/pexels-michelangelo-buonarroti-4176540.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Fönsterputs",
+    "text": "Vi erbjuder fönsterputs för alla våra kunder, löpande eller engångsavgift, året runt.",
+    "path": "../img/pexels-aleksandar-pasaric-625279.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Akutstäd",
+    "text": "När nöden kallar, då är Renax där på plats för att hjälpa er. Hör av er!",
+    "path": "../img/pexels-tima-miroshnichenko-6195129.jpg"
+  }
+]

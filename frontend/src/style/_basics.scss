@@ -1,0 +1,43 @@
+/***************
+basic styles
+***************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: $font;
+    font-size: $fontSize;
+    color: $black;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    transition: $transition;
+}
+
+//h2 {
+//    font-size: 2.5rem;
+//    font-weight: 300;
+//    text-align: center;
+//    &::after{
+//        display: block;
+//        content: "";
+//        width: 30%;
+//        height: 5px;
+//        background: linear-gradient(to right,#bfe9fc, $primary, $secondary);
+//        margin: 20px auto;
+//    }
+//  }
+//.container{
+//    max-width: 80%;
+//    margin: auto;
+//}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
