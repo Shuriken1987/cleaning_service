@@ -259,7 +259,7 @@ footer {
   }
   //NAVIGATION
   .navbar {
-    bottom: 55px;
+    bottom: 54px;
 
     button {
       border: none;
@@ -268,6 +268,9 @@ footer {
         box-shadow: none;
         color: lightgray;
       }
+    }
+    .navbar-colapse{
+      background-color: transparent;
     }
   }
   // INTRO
@@ -302,8 +305,12 @@ footer {
   }
   //ABOUT US PAGE
   .wrapper {
+    bottom: 55px;
     .page-intro {
       clip-path: polygon(0 0, 100% 0%, 100% 80%, 49% 100%, 0 80%);
+      .text{
+        width: 60%;
+      }
     }
 
     .section-first {
