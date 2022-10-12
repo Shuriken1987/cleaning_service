@@ -25,9 +25,6 @@ const OurPartnersSlider = ()=>{
 
     return <>
         <div className="our-clients">
-            <div className="section-header">
-                <h1 className="text-center">Våra klienter</h1>
-            </div>
             <Slider {...setts}>
                 {clients.map((client, index) => {
                     return <div className="slider-card" key={index}>

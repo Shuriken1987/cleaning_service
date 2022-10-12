@@ -1,22 +1,26 @@
 /***************
 basic styles
 ***************/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    font-family: $font;
-    font-size: $fontSize;
-    color: $black;
+
+body {
+  font-family: $font;
+  font-size: $fontSize;
+  color: $black;
 }
-ul{
-    list-style: none;
+
+ul {
+  list-style: none;
+  padding: 0;
 }
-a{
-    text-decoration: none;
-    transition: $transition;
+
+a {
+  text-decoration: none;
+  transition: $transition;
 }
 
 //h2 {
@@ -37,7 +41,7 @@ a{
 //    margin: auto;
 //}
 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
