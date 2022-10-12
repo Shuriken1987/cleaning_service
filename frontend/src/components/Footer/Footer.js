@@ -10,8 +10,18 @@ import {
 import {Link} from "react-router-dom";
 import {routeConfig} from "../../config/routeConfig";
 import logoImg from "../../img/Logo-renax-1.png"
+import {useEffect, useState} from "react";
 
 function Footer() {
+    const [isMedia, setIsMedia] = useState(false);
+
+    useEffect(() => {
+        window.addEventListener('resize', listenToResize)
+    }, [])
+
+    const listenToResize = () => {
+        window.innerWidth < 601 ? setIsMedia(true) : setIsMedia(false);
+    }
 
     return (
         <>
@@ -26,7 +36,7 @@ function Footer() {
                             </div>
 
                             <div className="footer-social-links">
-                                <a href="https://www.facebook.com/Food-Florist-Helsingborg-102803464926190"
+                                <a href="https://www.facebook.com/Renaxab"
                                    target="_blank"
                                    rel="noopener noreferrer"
                                 >
@@ -36,7 +46,7 @@ function Footer() {
                                    rel="noopener noreferrer">
                                     <FaTwitter/>
                                 </a>
-                                <a href="https://www.instagram.com/foodfloristhelsingborg"
+                                <a href="https://www.instagram.com/renax.ab/"
                                    target="_blank"
                                    rel="noopener noreferrer"
                                 >
@@ -49,8 +59,8 @@ function Footer() {
                                 </a>
                             </div>
                         </div>
-                        <div className="text-wrapper">
-                            <div className="about">
+                        <div className="text-wrapper row">
+                            <div className={`about ${!isMedia ? 'col-md-6' : 'col-md-12'}`}>
                                 <h6>Om oss</h6>
                                 <p>Renax AB bedriver höghygieniskt städ som är verksamma i första hand inom
                                     Livsmedelsindustri. Vår styrka är att vi kan utifrån våra kunders befintliga miljö
@@ -61,7 +71,7 @@ function Footer() {
                                     dessa orter, kontakta gärna oss och fråga om det är möjligt!</p>
                             </div>
 
-                            <div className="contact">
+                            <div className={`contact ${!isMedia ? 'col-md-3' : 'col-md-12'}`}>
                                 <h6>Kontakta oss</h6>
                                 <ul>
                                     <li>

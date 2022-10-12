@@ -4,7 +4,7 @@ const Contact = () => {
 
     return (
         <section className="contact-us wrapper">
-            <article className="intro proba">
+            <article className="intro page-intro">
                 <div className="text">
                     <h1 className="headline text-center">Kontakta oss</h1>
                     <h2 className=" text-center">Frågor, offert, hembesök eller bara för att prata</h2>
@@ -49,7 +49,7 @@ const Contact = () => {
                         </ul>
                     </div>
                     <div className="col-md-6">
-                        <h3>Samarbetspartners och leverantörer:</h3>
+                        <h3 className="text-center">Samarbetspartners och leverantörer:</h3>
                         <ul>
                             <li>
                                 <a className="footer-links" href="tel:042-12 81 81"><FaMailBulk/> &nbsp;
