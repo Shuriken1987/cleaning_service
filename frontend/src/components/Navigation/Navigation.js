@@ -1,9 +1,11 @@
 import React, {useEffect, useState} from "react";
 import {Link} from "react-router-dom";
 import {routeConfig} from "../../config/routeConfig";
+import {FaBars} from "react-icons/fa";
 
 const Navigation = () => {
     const [isSticky, setIsSticky] = useState(false);
+    const [isHamburger, setIsHamburger] = useState(false);
 
     useEffect(() => {
         window.addEventListener("scroll", listenToScroll);
@@ -11,6 +13,10 @@ const Navigation = () => {
 
     const listenToScroll = () => {
         window.scrollY > 1000 ? setIsSticky(true) : setIsSticky(false);
+    }
+
+    const showHamburger = () => {
+        isHamburger ? setIsHamburger(false) : setIsHamburger(true);
     }
 
     // const userBtnLayout = () => {
@@ -49,10 +55,11 @@ const Navigation = () => {
     return (
         <nav className={`navbar navbar-expand-lg navbar-light bg-light ${isSticky ? 'sticky-nav' : ''}`}>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+                    onClick={showHamburger}>
+                  <FaBars/>
             </button>
-            <div className="collapse navbar-collapse" id="navbarNav">
+            <div className={`${!isHamburger ? 'collapse' : ''} navbar-collapse`} id="navbarNav">
                 <ul className="navbar-nav">
                     <li className="nav-item">
                         <Link className="nav-link" to={routeConfig.HOME.url}>Hem</Link>
