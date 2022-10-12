@@ -33,7 +33,7 @@
     .nav-item {
       margin-right: 80px;
 
-      .nav-link {
+      a {
         color: lightgray;
 
         &:hover {
@@ -41,8 +41,8 @@
           transition: $transition;
         }
 
-        &.active {
-          color: $primary;
+        &:focus {
+          color: $primary ;
         }
       }
     }
@@ -60,7 +60,7 @@
 
   .text {
     width: 60%;
-    margin: auto;
+    margin: 0 auto;
 
     h4 {
       line-height: 1.635;
@@ -270,6 +270,16 @@ footer {
       }
     }
   }
+  // INTRO
+  .intro {
+    padding: 50px 0;
+
+    .text {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+
   // HOMEPAGE SERVICES
   .services .service-holder .col-md-4 {
     .text-holder {
