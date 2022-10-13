@@ -1,3 +1,5 @@
+import gif from "../img/icons8-services.gif";
+
 const Services = () => {
 
     return (
@@ -13,6 +15,10 @@ const Services = () => {
                         livsmedelsföretag och mindre lokalvård.</h4>
                 </div>
             </article>
+            <div className="in-progress">
+                <h1 className="text-center">In progress ...</h1>
+                <img src={gif} alt="In progress..." style={{width: 200, height: 200}}/>
+            </div>
         </section>
     )
 }

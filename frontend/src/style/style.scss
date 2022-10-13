@@ -42,7 +42,7 @@
         }
 
         &:focus {
-          color: $primary ;
+          color: $primary;
         }
       }
     }
@@ -249,6 +249,7 @@ footer {
     }
   }
 }
+
 //SERVICES PAGE
 //.wrapper{
 //  position: relative;
@@ -274,7 +275,8 @@ footer {
         color: lightgray;
       }
     }
-    .navbar-colapse{
+
+    .navbar-colapse {
       background-color: transparent;
     }
   }
@@ -311,9 +313,11 @@ footer {
   //ABOUT US PAGE
   .wrapper {
     bottom: 55px;
+
     .page-intro {
       clip-path: polygon(0 0, 100% 0%, 100% 80%, 49% 100%, 0 80%);
-      .text{
+
+      .text {
         width: 60%;
       }
     }
@@ -337,5 +341,12 @@ footer {
         }
       }
     }
+  }
+}
+
+.in-progress {
+  img {
+    display: block;
+    margin: 10px auto;
   }
 }
