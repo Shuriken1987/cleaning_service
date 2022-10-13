@@ -15,9 +15,8 @@ const Services = () => {
                         livsmedelsföretag och mindre lokalvård.</h4>
                 </div>
             </article>
-            <div className="in-progress">
-                <h1 className="text-center">In progress ...</h1>
-                <img src={gif} alt="In progress..." style={{width: 200, height: 200}}/>
+            <div className="comming-soon">
+                <img src={gif} alt="Comming soon..." style={{width: 200, height: 200}}/>
             </div>
         </section>
     )
