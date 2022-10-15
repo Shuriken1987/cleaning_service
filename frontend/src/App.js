@@ -2,7 +2,7 @@ import "../src/style/style.scss";
 import {Routes, Route} from "react-router-dom";
 import {routeConfig} from "./config/routeConfig";
 import Home from "./pages/Home";
-import Services from "./pages/Services";
+import Service from "./pages/Service";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Navigation from "./components/Navigation/Navigation";
@@ -16,7 +16,7 @@ function App() {
             <Navigation/>
             <Routes>
                 <Route path={routeConfig.HOME.url} element={<Home/>}/>
-                <Route path={routeConfig.SERVICES.url} element={<Services/>}/>
+                <Route path={routeConfig.SERVICES.url} element={<Service/>}/>
                 <Route path={routeConfig.ABOUT.url} element={<About/>}/>
                 <Route path={routeConfig.CONTACT.url} element={<Contact/>}/>
             </Routes>

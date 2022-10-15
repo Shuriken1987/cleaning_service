@@ -3,7 +3,8 @@ export const routeConfig = {
         url: '/'
     },
     SERVICES: {
-        url: '/services'
+        url: '/services/:serviceTitle',
+        realUrl : serviceTitle => `/services/${serviceTitle}`
     },
     CONTACT: {
         url: '/contact'

@@ -36,6 +36,7 @@
       a {
         color: lightgray;
 
+
         &:hover {
           color: $primary;
           transition: $transition;
@@ -45,7 +46,10 @@
           color: $primary;
         }
       }
+
+
     }
+
   }
 }
 
@@ -103,6 +107,10 @@
 
         .service-title {
           font-size: 24px;
+        }
+
+        p:first-letter {
+          text-transform: uppercase;
         }
       }
     }
@@ -348,5 +356,14 @@ footer {
   img {
     display: block;
     margin: 10px auto;
+  }
+}
+
+.dropdown {
+  ul {
+    //background-color: transparent !important;
+    a:first-letter {
+      text-transform: uppercase;
+    }
   }
 }

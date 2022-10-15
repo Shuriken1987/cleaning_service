@@ -1,56 +1,65 @@
 [
   {
     "id": 1,
-    "title": "Industristädning",
-    "text": "Industristädning sätter höga krav på kompetensen och vi lever alltid upp till den.",
-    "path":  "../img/pexels-becosan-3681787.jpg"
+    "title": "livsmedelsstädning",
+    "description": "Vi är industriledande inom livsmedelsstädning och har flera referenser inom det.",
+    "text": "Vi inkluderar anpassade rengöringsprogram, dagliga besiktningar, bakterie kontroller och massa annat. Kunderna vi arbetar med i samband med livsmedelsstädning är styckerier, charktillverkning, grönsaksindustrin, bageri samt övrig livsmedelsindustri.Våra anställda är vanligtvis dem som lämnar produktions lokalerna sist. Därav kan vi även lösa en hel den andra uppgifter åt våra kunder, förberedande åtgärder för nästa dags produktion, kontrollera kylrum samt yttre miljöer bland annat. Våra anställda har rätt utbildning och den modernaste utrustningen för att ständigt vara tidseffektiva och ge er den bästa städningen, till det bästa priset.",
+    "path": "../img/pexels-karolina-grabowska-4239035.jpg"
   },
   {
     "id": 2,
-    "title": "Fabriksstädning",
-    "text": "Fabriker är verksamma 24/7, vi sköter städningen oavsett tidpunkt och dag.",
+    "title": "fabriksstädning",
+    "description": "Fabriker är verksamma 24/7, vi sköter städningen oavsett tidpunkt och dag.",
+    "text": "Att städa en fabrik är ingen enkel uppgift och arbetet sätter höga krav på städföretaget som ska utföra det. En fabriksstädning kräver att samtliga städare besitter korrekt utbildning, rätt material och är tränade i alla säkerhetsrisker som arbetet kan medföra. Utöver detta, så är det viktigt att städföretaget har rätt certifikat, erfarenhet och möjlighet att utföra städningen trots att fabriken är aktiv i arbete. Det är sällan en fabrik stänger ner för att låta städfirman städa, utan kollegorna hos Renax är alltid tränade för att kunna utföra städningen under tiden som fabriken är driftsatt.Vi arbetar med ett öga för detaljer och en rimlig prissättning för dig, vid besöket på fabriken så kommer vi enkelt kunna erbjuda en detaljerad offert över alla områden som behövs städas och hur vi ska göra det. Offerten och mötet är självfallet alltid kostnadsfritt.",
     "path": "../img/pexels-pixabay-209230.jpg"
   },
   {
     "id": 3,
-    "title": "Livsmedelsstädning",
-    "text": "Vi är industriledande inom livsmedelsstädning och har flera referenser inom det.",
-    "path": "../img/pexels-karolina-grabowska-4239035.jpg"
+    "title": "industristädning",
+    "description": "Industristädning sätter höga krav på kompetensen och vi lever alltid upp till den.",
+    "text":"Renax är branschledande inom industristädning och har flera referenser att utgå från och visa upp hur effektiva och kunniga vi är. Vi arbetar med en nära organisation där alla i organisationen arbetar med samma fokus och driv, att ständigt trycka förbi gränserna för vad som krävs för att vara det industriledande företaget. Våra priser är konkurrenskraftiga och rätt anpassade efter era behov, all maskin och utrustning står vi för och vi besitter utbildning för att kunna välja rätt produkter att använda för att bibehålla en god städ miljö.",
+    "path": "../img/pexels-becosan-3681787.jpg"
   },
   {
     "id": 4,
-    "title": "Kontorsstädning",
-    "text": "Löpande eller engångstillfälle? Vi levererar i hela Sverige.",
+    "title": "kontorsstädning",
+    "description": "Löpande eller engångstillfälle? Vi levererar i hela Sverige.",
+    "text":"Renax arbetar med företag och organisationer för att skapa en effektiv kontorsmiljö med vår kontorsstädning. Vår personal är välutbildad, organisationen besitter alla behöriga certifikat och vi har gott om referenser. Vare sig det är ett litet kontor i stan eller ett komplex i industrin, så är vi rätt företag för er. Du kan alltid kontakta oss för en kostnadsfri offert eller begära ett gratis kontorsbesök, så vi kan ge en mer detaljer priskalkyl och få diskutera städningen med er. Vi är ansvarsförsäkrade och har ISO-certifikat för miljö.Vi arbetar i flera olika städer, som du kan finna nedan och har som målsättning att alltid expandera in till nya städer.",
     "path": "../img/kontorsstadning.jpg"
   },
   {
     "id": 5,
-    "title": "Butiksstädning",
-    "text": "Butiker och livsmedelsbutiker behöver ständig städning, vi fixar det åt dig.",
+    "title": "butiksstädning",
+    "description": "Butiker och livsmedelsbutiker behöver ständig städning, vi fixar det åt dig.",
+    "text":"Att ens butik ska vara ren och fräsch är ett uppenbart krav som kunderna kommer ställa på en. Ibland händer det dock att företagare snålar på just städningen. Vissa gör det bara en gång per vecka, varannan vecka eller mindre när det behövs mer, antal tillfällen varierar självfallet baserat på vilken verksamhet som bedrivs i butiken. Många anlitar även städföretag som inte levererar eller besitter rätt kompetens för att utföra arbetet, man missar små detaljerna och trivseln i butiken får lida.Renax utför all butiksstädning med målsättning att införskaffa en ny referenskund, vi fixar alla behov som du har kopplat till din butik och har alltid med oss flera års erfarenhet som gör att vi kan identifiera städområden som du själv kanske missar.",
     "path": "../img/pexels-matilda-wormwood-4098313.jpg"
   },
   {
     "id": 6,
-    "title": "Hemstäd",
-    "text": "Vem vill inte komma hem till ett rent hem? Vi ser till att du kan koppla av.",
+    "title": "hemstäd",
+    "description": "Vem vill inte komma hem till ett rent hem? Vi ser till att du kan koppla av.",
+    "text":"Underlätta vardagen med hemstädning från Renax, få tid till det viktiga i livet istället.Våra städare har flera års erfarenhet och vår rekryteringsprocess är noggrann, tryggheten i att släppa in någon i ens hem är viktigt och vi värnar oerhört om det. Vi gör allt från renodlad fackmannamässig hemstädning som dammtorkning, dammsugning, våttorkning, avtorkning, fuktmoppning och avfläckning. Vi fixar även småsaker som disken, diskmaskinen, bäddar sängen och massa annat. Så att varje gång du kommer hem, så kommer du hem till ett rent och välstädat hem.",
     "path": "../img/pexels-tima-miroshnichenko-6195288.jpg"
   },
   {
     "id": 7,
-    "title": "Sanering",
-    "text": "Sanering betyder kort och gott, rengöring. Något vi är absolut bäst på.",
+    "title": "sanering",
+    "description": "Sanering betyder kort och gott, rengöring. Något vi är absolut bäst på.",
+    "text": "Vi arbetar med flera varianter av sanering, varje kundärende och saneringsuppdrag sätter annorlunda krav på utbildning och kompetens för att fixa det. Renax har möjlighet att hantera all form av skadesanering som mögel och asbets. Men vi besitter även kompetensen att hantera sanering av klotter och färg på all form av underlag, som fönster, fasader, byggnader, lyktstolpar med mera.Våra saneringsmetoder är beprövade sedan 1993 och vi har alltid möjlighet att ta emot nya saneringsuppdrag.Med en snabb och effektiv sanering så kan du rädda mer än vad du tror, sanering handlar ju om att bevara och rädda dem resurserna som är på plats. Det är både ekonomiskt och miljövänligt och med vår långa erfarenhet så kan vi ta hand om din sanering omgående.",
     "path": "../img/pexels-michelangelo-buonarroti-4176540.jpg"
   },
   {
     "id": 8,
-    "title": "Fönsterputs",
-    "text": "Vi erbjuder fönsterputs för alla våra kunder, löpande eller engångsavgift, året runt.",
+    "title": "fönsterputs",
+    "description": "Vi erbjuder fönsterputs för alla våra kunder, löpande eller engångsavgift, året runt.",
+    "text": "Kontakta oss, så putsar vi.Vi arbetar med både privatpersoner, företagskunder och bostadsrättsföreningar för att hantera er fönsterputsning. Inget arbete är för stort eller för litet, engångstillfälle eller löpande fönsterputs, vi löser det åt er direkt.Storleken på arbetet förändrar inte vårt arbetssätt, vi arbetar tills arbetet är färdigt och du är nöjd med resultatet, självfallet har du alltid garanti hos oss.Vi har hjälpt företagare, privatpersoner och BRF:er i flera år med deras fönsterputs och har flertal återkommande kunder.",
     "path": "../img/pexels-aleksandar-pasaric-625279.jpg"
   },
   {
     "id": 9,
-    "title": "Akutstäd",
-    "text": "När nöden kallar, då är Renax där på plats för att hjälpa er. Hör av er!",
+    "title": "akutstäd",
+    "description": "När nöden kallar, då är Renax där på plats för att hjälpa er. Hör av er!",
+    "text": "En spontant översvämning, mögel som upptäckts eller något annat akut som behövs städas? Vi är ute hos er inom en timme och löser det.Renax AB är ett städföretag som utvecklat sig till en organisation som har bred kompetens och kan hantera alla former av arbeten inom städ. Akutstäd är en utav dessa, något som vi gärna utför till våra kunder som befinner sig lokalt till något av våra kontor. Priset för akutstäd är självfallet högre än vanligt, då det behövs ordnas omgående. Men effektiviteten och hur snabbt vi städar åt er, kompenserar detta enormt.",
     "path": "../img/pexels-tima-miroshnichenko-6195129.jpg"
   }
 ]

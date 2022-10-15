@@ -1,6 +1,7 @@
-import allServices from "../../assets/services.json"
+import allServices from "../../assets/services.json";
 import {useState, useEffect} from "react";
 import {Link} from "react-router-dom";
+import {routeConfig} from "../../config/routeConfig";
 
 const Services = () => {
     const [all, setAll] = useState([]);
@@ -22,9 +23,9 @@ const Services = () => {
                             </div>
                             <div className="text-holder">
                                 <p className="service-title">{el.title}</p>
-                                <p className="service-text">{el.text}</p>
+                                <p className="service-text">{el.description}</p>
                             </div>
-                            <Link className="read-more">Läs mer</Link>
+                            <Link className="read-more" to={routeConfig.SERVICES.realUrl(el.title)}>Läs mer</Link>
                         </div>
                     )
                 })}
