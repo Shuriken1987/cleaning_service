@@ -11,12 +11,15 @@ const Service = () => {
     const [service, setService] = useState({});
     const [isParamsValid, setIsParamsValid] = useState(true);
     const params = useParams();
-    const ref = useRef(null)
-    const isInView = useInView(ref);
+    const ref = useRef(null);
+    const isInView = useInView(ref, {once: false});
 
-    useEffect(() => {
-        console.log("Element is in view: ", isInView)
-    }, [isInView]);
+
+    const styles = {
+          transform: isInView ? "none" : "translateY(200px)",
+          opacity: isInView ? 1 : 0,
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+    }
 
     useEffect(() => {
         allServices.map((singleService, index) => {
@@ -25,6 +28,7 @@ const Service = () => {
             }
         })
     }, [params.serviceTitle]);
+
 
     return (
         <>
@@ -42,15 +46,15 @@ const Service = () => {
                     </div>
                 </article>
 
-                <article className="section">
+                <article className="section" >
                     <div className="container is--services">
                         <div className="sticky-parrent">
                             <div className="sticky-box">
-                                <LazyLoadImage src={service.path} alt=""/>
+                                <LazyLoadImage src={service.path} alt={service.title}/>
                             </div>
-                            <div id="more" className="tab-content is--services">
-                                <div className="benefits__left-block">
-                                    <div id="live-update" className="colored-headings">
+                            <div id="more" className="tab-content is--services" ref={ref} >
+                                <div className="benefits__left-block" style={styles}>
+                                    <div id="live-update" className="colored-headings" >
                                         <h2 className="heading-white">{service.title}</h2>
                                         <h2 className="heading-colored">{service.description}</h2>
                                     </div>
@@ -58,8 +62,8 @@ const Service = () => {
                                         {service.text}
                                     </p>
                                 </div>
-                                <motion.div className="benefits__left-block" >
-                                    <div id="live-update" className="colored-headings">
+                                <div className="benefits__left-block" style={styles}>
+                                    <div id="live-update" className="colored-headings" >
                                         <h2 className="heading-colored">{`Varför välja Renax för er ${service.title}?`}</h2>
                                     </div>
                                     <p className="main-p is--padding sm-width">
@@ -72,25 +76,26 @@ const Service = () => {
                                         ska välja just oss.
 
                                     </p>
-                                </motion.div>
+                                </div>
                                 <div className="benefits__left-block">
                                     <div id="live-update" className="colored-headings">
                                         <h2 className="heading-colored">{`Hur bokar jag ${service.title} av Renax?`}</h2>
                                     </div>
                                     <p className="main-p is--padding sm-width">
-                                       1. Du kontaktar oss för ett möte, antingen genom att ringa.
+                                        1. Du kontaktar oss för ett möte, antingen genom att ringa.
                                     </p>
                                     <p className="main-p is--padding sm-width">
-                                       2. Vi diskuterar utmaningarna som finns för just er fabrik och bestämmer ett datum
+                                        2. Vi diskuterar utmaningarna som finns för just er fabrik och bestämmer ett
+                                        datum
                                         för ett besök.
                                     </p><p className="main-p is--padding sm-width">
-                                   3. Vid besöket så dokumenterar vi alla områden och processor som ska medföras i vår
+                                    3. Vid besöket så dokumenterar vi alla områden och processor som ska medföras i vår
                                     städning av er fabrik.
                                 </p><p className="main-p is--padding sm-width">
                                     4. Vi gör en beräkning på priset och erbjuder er en kostnadsfri offert.
                                 </p>
                                     <p className="main-p is--padding sm-width">
-                                       5. När ni accepterat offerten så sätter vi ihop ett team av städare med rätt
+                                        5. När ni accepterat offerten så sätter vi ihop ett team av städare med rätt
                                         erfarenhet och kompetens och kan påbörja städningen med kort varsel.
                                     </p>
                                 </div>
