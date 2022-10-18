@@ -8,8 +8,13 @@ import Contact from "./pages/Contact";
 import Navigation from "./components/Navigation/Navigation";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import NotFound from './pages/NotFound';
+import {motion, useScroll} from "framer-motion";
+
 
 function App() {
+    const {scrollYProgress} = useScroll();
+
     return (
         <div className="App">
             <Header/>
@@ -19,8 +24,13 @@ function App() {
                 <Route path={routeConfig.SERVICES.url} element={<Service/>}/>
                 <Route path={routeConfig.ABOUT.url} element={<About/>}/>
                 <Route path={routeConfig.CONTACT.url} element={<Contact/>}/>
+                <Route path='*' element={<NotFound/>}/>
             </Routes>
             <Footer/>
+            <motion.div
+                className="progress-bar"
+                style={{scaleX: scrollYProgress}}
+            />
         </div>
     );
 }

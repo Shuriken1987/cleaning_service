@@ -7,10 +7,10 @@ export const routeConfig = {
         realUrl : serviceTitle => `/services/${serviceTitle}`
     },
     CONTACT: {
-        url: '/contact'
+        url: '/kontakta-oss'
     },
     ABOUT: {
-        url: '/about'
+        url: '/om-oss'
     },
 
 }

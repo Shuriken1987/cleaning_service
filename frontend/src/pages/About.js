@@ -1,6 +1,7 @@
 import carImg from "../img/renax-bil.jpeg";
 import happyCustomerImg from "../img/nojd-kund.jpg";
 import {useEffect, useState} from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const About = () => {
     const [isMedia, setIsMedia] = useState(false);
@@ -29,7 +30,7 @@ const About = () => {
             <article className="section-first container">
                 <div className="row ">
                     <div className="img col-md-6 px-0">
-                        <img src={carImg} alt=""/>
+                        <LazyLoadImage src={carImg} alt=""/>
                     </div>
                     <div className="about-text col-md-6 ">
                         <h1>Industriledande städföretag</h1>
@@ -61,7 +62,7 @@ const About = () => {
                             för oss.</p>
                     </div>
                     <div className="img second col-md-6 px-0">
-                        <img src={happyCustomerImg} alt=""/>
+                        <LazyLoadImage src={happyCustomerImg} alt=""/>
                     </div>
                 </div>
             </article>

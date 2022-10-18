@@ -11,7 +11,7 @@ const Services = () => {
     }, []);
 
     return (
-        <div className="services text-center">
+        <section className="services text-center">
             <h1>Våra tjänster</h1>
             <div className="service-holder">
                 {all.map((el, index) => {
@@ -30,7 +30,7 @@ const Services = () => {
                     )
                 })}
             </div>
-        </div>
+        </section>
     )
 
 }
