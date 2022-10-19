@@ -25,7 +25,7 @@ const Services = () => {
                                 <p className="service-title">{el.title}</p>
                                 <p className="service-text">{el.description}</p>
                             </div>
-                            <Link className="read-more" to={routeConfig.SERVICES.realUrl(el.title)}>Läs mer</Link>
+                            <Link className="btns read-more" to={routeConfig.SERVICES.realUrl(el.title)}>Läs mer</Link>
                         </div>
                     )
                 })}

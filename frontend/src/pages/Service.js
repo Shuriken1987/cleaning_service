@@ -62,7 +62,9 @@ const Service = () => {
                                         {service.text}
                                     </p>
                                 </div>
-                                <div className="benefits__left-block" style={styles}>
+                                <motion.div className="benefits__left-block"
+                                            initial={{ opacity: 0 }}
+                                            whileInView={{ opacity: 1 }} >
                                     <div id="live-update" className="colored-headings" >
                                         <h2 className="heading-colored">{`Varför välja Renax för er ${service.title}?`}</h2>
                                     </div>
@@ -76,8 +78,9 @@ const Service = () => {
                                         ska välja just oss.
 
                                     </p>
-                                </div>
-                                <div className="benefits__left-block">
+                                </motion.div>
+                                <motion.div className="benefits__left-block" initial={{ opacity: 0 }}
+                                            whileInView={{ opacity: 1 }}>
                                     <div id="live-update" className="colored-headings">
                                         <h2 className="heading-colored">{`Hur bokar jag ${service.title} av Renax?`}</h2>
                                     </div>
@@ -98,7 +101,7 @@ const Service = () => {
                                         5. När ni accepterat offerten så sätter vi ihop ett team av städare med rätt
                                         erfarenhet och kompetens och kan påbörja städningen med kort varsel.
                                     </p>
-                                </div>
+                                </motion.div>
                             </div>
                         </div>
                     </div>
