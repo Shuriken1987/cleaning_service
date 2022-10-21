@@ -12,5 +12,4 @@ export const routeConfig = {
     ABOUT: {
         url: '/om-oss'
     },
-
 }

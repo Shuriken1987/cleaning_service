@@ -11,6 +11,7 @@ const OurPartnersSlider = () => {
         setAllClients(ourClients);
     }, []);
 
+    // Slider config
     const setts = {
         infinite: true,
         slidesToShow: 5,

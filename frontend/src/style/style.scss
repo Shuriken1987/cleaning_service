@@ -46,10 +46,31 @@
           color: $primary;
         }
       }
-
-
     }
+  }
 
+  .dropdown {
+    ul {
+      border: none;
+      .dropdown-item {
+
+        &:focus {
+          background-color: transparent;
+        }
+
+        &:hover {
+          background-color: transparent;
+        }
+
+        &:active {
+          background-color: transparent;
+        }
+
+        &:first-letter {
+          text-transform: uppercase;
+        }
+      }
+    }
   }
 }
 
@@ -260,10 +281,6 @@ footer {
 .section {
   opacity: 1;
 
-  &::-webkit-scrollbar {
-    width: 0px;
-  }
-
   .container {
     width: 1920px !important;
     max-width: 100%;
@@ -272,11 +289,6 @@ footer {
     padding: 7em 3.85em;
     font-family: Ivymode, sans-serif;
     background: linear-gradient(to right, rgba($black, 0.4), rgba($black, 0.1), rgba($black, 0.1), rgba($black, 0.1), rgba($black, 0.1), rgba($black, 0.3), rgba($black, 0.2));
-
-
-    &::-webkit-scrollbar {
-      width: 0px;
-    }
 
     .sticky-parrent {
       display: flex;
@@ -418,6 +430,14 @@ footer {
     .navbar-colapse {
       background-color: transparent;
     }
+    .dropdown{
+      ul{
+        background-color: transparent;
+        border: none;
+        padding-left: 15%;
+        font-size: 1em;
+      }
+    }
   }
   // INTRO
   .intro {
@@ -481,13 +501,53 @@ footer {
       }
     }
   }
-}
+  //  SERVICE PAGE
+  .section {
+    .container {
+      padding-top: 0;
+      padding: 2em 1em;
 
+      .sticky-parrent {
+        overflow: hidden;
+        flex-direction: column;
+        justify-content: flex-start;
 
-.dropdown {
-  ul {
-    a:first-letter {
-      text-transform: uppercase;
+        .sticky-box {
+          overflow: hidden;
+          align-items: flex-start;
+          position: static;
+          height: auto;
+          padding-top: 0;
+          padding-bottom: 2em;
+          justify-content: center;
+
+          img {
+            width: 100%;
+            height: 20em;
+            margin-bottom: 2em;
+          }
+        }
+
+        .tab-content {
+          padding-top: 0;
+          width: 100%;
+          padding-left: 0;
+          border-left-style: none;
+
+          .colored-headings {
+            font-size: 6px;
+          }
+
+          .is--padding {
+            width: 100%;
+            padding-top: 2em;
+            padding-bottom: 2em;
+          }
+        }
+      }
     }
   }
 }
+
+
+

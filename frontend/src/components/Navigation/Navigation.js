@@ -14,7 +14,7 @@ const Navigation = () => {
     }, [])
 
     const listenToScroll = () => {
-        window.scrollY > 1000 ? setIsSticky(true) : setIsSticky(false);
+        window.scrollY > 1200 ? setIsSticky(true) : setIsSticky(false);
     }
 
     // If responsive , oncklick changes state of isHamburger and ads or removes classname 'collapse' from #navbarNav
@@ -22,11 +22,12 @@ const Navigation = () => {
         isHamburger ? setIsHamburger(false) : setIsHamburger(true);
     }
 
+    // Service link dropdown layout
     const serviceDropdownLayout = () => {
         return allServices.map((el, index) => {
             return <li className="nav-item" key={index}>
                 <Link to={routeConfig.SERVICES.realUrl(el.title)}
-                      className="dropdown-item user-dropdown">
+                      className="dropdown-item ">
                     {el.title}
                 </Link>
             </li>

@@ -4,17 +4,17 @@ import {Link} from "react-router-dom";
 import {routeConfig} from "../../config/routeConfig";
 
 const Services = () => {
-    const [all, setAll] = useState([]);
+    const [ourServices, setOurServices] = useState([]);
 
     useEffect(() => {
-        setAll(allServices);
+        setOurServices(allServices);
     }, []);
 
     return (
         <section className="services text-center">
             <h1>Våra tjänster</h1>
             <div className="service-holder">
-                {all.map((el, index) => {
+                {ourServices.map((el, index) => {
                     return (
                         <div className="col-md-4" key={index}>
                             <div className="holder">

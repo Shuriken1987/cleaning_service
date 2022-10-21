@@ -2,10 +2,9 @@ import {useParams} from "react-router-dom";
 import {useEffect, useState} from "react";
 import allServices from "../assets/services.json";
 import {LazyLoadImage} from "react-lazy-load-image-component";
-import happyCustomerImg from "../img/nojd-kund.jpg";
 import {useInView} from "framer-motion"
 import {useRef} from "react";
-import {motion, useScroll} from "framer-motion";
+import {motion} from "framer-motion";
 
 const Service = () => {
     const [service, setService] = useState({});
