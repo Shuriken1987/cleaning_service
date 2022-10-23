@@ -5,7 +5,7 @@ import { useLocation } from "react-router-dom";
   const { pathname } = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo(0, 0, 'smooth');
   }, [pathname]);
 
   return null;

@@ -15,8 +15,9 @@
 
 //NAVIGATION
 .navbar {
-  bottom: 70px;
+  bottom: 55px;
   background-color: rgba($black, .5) !important;
+  padding: 0;
 
   &.sticky-nav {
     position: sticky;
@@ -230,7 +231,7 @@ footer {
 //ABOUT US PAGE
 .wrapper {
   position: relative;
-  bottom: 70px;
+  bottom: 55px;
 
   .section-first {
     padding-bottom: 10px;
@@ -416,7 +417,7 @@ footer {
   }
   //NAVIGATION
   .navbar {
-    bottom: 54px;
+    bottom: 36px;
 
     button {
       border: none;
@@ -471,13 +472,14 @@ footer {
   }
   //ABOUT US PAGE
   .wrapper {
-    bottom: 55px;
+    bottom: 37px;
 
     .page-intro {
       clip-path: polygon(0 0, 100% 0%, 100% 80%, 49% 100%, 0 80%);
 
       .text {
-        width: 60%;
+        width: 80%;
+
       }
     }
 
