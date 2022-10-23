@@ -15,7 +15,7 @@ const OurPartnersSlider = () => {
     const setts = {
         infinite: true,
         slidesToShow: 5,
-        slidesToScroll: 3,
+        slidesToScroll: 2,
         arrows: false,
         dots: true,
         responsive: [

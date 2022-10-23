@@ -4,7 +4,7 @@ import Video from "./Video";
 const Header = () => {
 
     return (
-        <header className="hero">
+        <header className="header">
             <div className="logo">
                 <img src={logoImage} alt="Renax" className="logo-img"/>
             </div>
