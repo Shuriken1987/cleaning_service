@@ -53,6 +53,7 @@
   .dropdown {
     ul {
       border: none;
+
       .dropdown-item {
 
         &:focus {
@@ -431,8 +432,9 @@ footer {
     .navbar-colapse {
       background-color: transparent;
     }
-    .dropdown{
-      ul{
+
+    .dropdown {
+      ul {
         background-color: transparent;
         border: none;
         padding-left: 15%;
@@ -478,7 +480,7 @@ footer {
       clip-path: polygon(0 0, 100% 0%, 100% 80%, 49% 100%, 0 80%);
 
       .text {
-        width: 80%;
+        width: 70%;
 
       }
     }
@@ -503,7 +505,11 @@ footer {
       }
     }
   }
+
   //  SERVICE PAGE
+   .services-page .page-intro .text {
+    width: 80%;
+  }
   .section {
     .container {
       padding-top: 0;
