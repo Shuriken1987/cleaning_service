@@ -1,5 +1,6 @@
 import logoImage from "../../img/Logo-renax-1.png";
 import Video from "./Video";
+import Navigation from "../Navigation/Navigation";
 
 const Header = () => {
 
@@ -11,6 +12,7 @@ const Header = () => {
             <div className="video">
                 <Video/>
             </div>
+            <Navigation/>
         </header>
     )
 }

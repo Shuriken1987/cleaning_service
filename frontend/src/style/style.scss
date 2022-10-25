@@ -2,82 +2,87 @@
 @import "basics";
 //HEADER
 .header {
+  position: relative;
+
+  .logo {
+    background-color: white;
+
     .logo-img {
       display: block;
       width: 10%;
       margin: 0 auto;
       padding: 15px 0;
+    }
   }
-}
 
-//NAVIGATION
-.navbar {
-  bottom: 55px;
-  background-color: rgba($black, .5) !important;
-  padding: 0;
-
-  &.sticky-nav {
-    position: sticky;
-    top: 0;
-    bottom: auto;
-    z-index: 10;
+  //NAVIGATION
+  .navbar {
+    position: absolute;
+    width: 100%;
+    bottom: 6px;
     background-color: rgba($black, .7) !important;
-  }
+    padding: 0;
 
-  .navbar-nav {
-    margin: 0 auto;
-    font-size: 22px;
+    &.sticky-nav {
+      position: fixed;
+      top: 0;
+      bottom: auto;
+      z-index: 10;
+    }
 
-    .nav-item {
-      margin-right: 80px;
+    .navbar-nav {
+      margin: 0 auto;
+      font-size: 22px;
 
-      a {
-        color: lightgray;
+      .nav-item {
+        margin-right: 80px;
+
+        a {
+          color: lightgray;
 
 
-        &:hover {
-          color: $primary;
-          transition: $transition;
-        }
+          &:hover {
+            color: $primary;
+            transition: $transition;
+          }
 
-        &:focus {
-          color: $primary;
+          &:focus {
+            color: $primary;
+          }
         }
       }
     }
-  }
 
-  .dropdown {
-    ul {
-      .dropdown-item {
-        &:focus {
-          background-color: transparent;
-        }
+    .dropdown {
+      ul {
+        .dropdown-item {
+          &:focus {
+            background-color: transparent;
+          }
 
-        &:hover {
-          background-color: transparent;
-        }
+          &:hover {
+            background-color: transparent;
+          }
 
-        &:active {
-          background-color: transparent;
-        }
+          &:active {
+            background-color: transparent;
+          }
 
-        &:first-letter {
-          text-transform: uppercase;
+          &:first-letter {
+            text-transform: uppercase;
+          }
         }
       }
     }
   }
 }
-
 
 // INTRO
 .intro {
   padding: $padding;
-  padding-top: 0;
 
   .headline {
-    margin: 30px 0;
+    padding-bottom: 30px;
   }
 
   .text {
@@ -226,7 +231,7 @@ footer {
 //ABOUT US PAGE
 .wrapper {
   position: relative;
-  bottom: 55px;
+  bottom: 6px;
 
   .section-first {
     padding-bottom: 10px;
@@ -275,10 +280,7 @@ footer {
 
 //SERVICES PAGE
 .section {
-  opacity: 1;
-
   .container {
-    width: 1920px !important;
     max-width: 100%;
     margin-right: auto;
     margin-left: auto;
@@ -289,29 +291,17 @@ footer {
     .sticky-parrent {
       display: flex;
       width: 100%;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
       flex-direction: row;
-      -webkit-box-pack: start;
       justify-content: flex-start;
-      -webkit-box-align: stretch;
       align-items: stretch;
 
       .sticky-box {
         position: sticky;
         top: 0;
-        display: flex;
         width: 100%;
         height: 48em;
         padding-top: 4em;
         padding-left: 0;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        flex-direction: column;
-        -webkit-box-pack: start;
-        justify-content: flex-start;
-        -webkit-box-align: start;
-        align-items: flex-start;
 
         img {
           width: 30em;
@@ -319,32 +309,21 @@ footer {
           object-fit: cover;
           border: 0;
           max-width: 100%;
-          vertical-align: middle;
-          display: inline-block;
         }
       }
 
       .tab-content {
         padding-top: 4em;
-        display: block;
-        overflow: hidden;
         width: 100%;
         height: auto;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
         flex-direction: column;
         flex-wrap: wrap;
-        -webkit-box-align: start;
         align-items: flex-start;
-        -webkit-box-flex: 0;
         flex: 0 auto;
 
         .colored-headings {
           display: flex;
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
           flex-direction: column;
-          -webkit-box-align: start;
           align-items: flex-start;
 
           .heading-white {
@@ -407,35 +386,42 @@ footer {
 
 //HEADER
 @media(max-width: 767px) {
-  .hero .logo .logo-img {
-    width: 25%;
-  }
-  //NAVIGATION
-  .navbar {
-    bottom: 36px;
-
-    button {
-      border: none;
-
-      &.navbar-toggler {
-        box-shadow: none;
-        color: lightgray;
-      }
+  .header {
+    .logo .logo-img {
+      width: 25%;
     }
 
-    .navbar-colapse {
-      background-color: transparent;
-    }
+    //NAVIGATION
+    .navbar {
+      top: 87%;
+      bottom: auto;
+      z-index: 10;
 
-    .dropdown {
-      ul {
-        background-color: transparent;
+      button {
         border: none;
-        padding-left: 15%;
-        font-size: 1em;
+
+        &.navbar-toggler {
+          box-shadow: none;
+          color: lightgray;
+        }
+      }
+
+      .dropdown {
+        ul {
+          background-color: transparent;
+          border: none;
+          padding-left: 15%;
+          font-size: 1em;
+        }
+      }
+
+      li {
+        padding-left: 10px;
       }
     }
   }
+
+
   // INTRO
   .intro {
     padding: 50px 0;
@@ -455,7 +441,6 @@ footer {
 
       .text {
         width: 70%;
-
       }
     }
 

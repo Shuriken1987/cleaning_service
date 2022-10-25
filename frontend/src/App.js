@@ -9,7 +9,6 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NotFound from './pages/NotFound';
 
-import Navigation from "./components/Navigation/Navigation";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
@@ -20,7 +19,6 @@ function App() {
     return (
         <div className="App">
             <Header/>
-            <Navigation/>
             <Routes>
                 <Route path={routeConfig.HOME.url} element={<Home/>}/>
                 <Route path={routeConfig.SERVICES.url} element={<Service/>}/>
